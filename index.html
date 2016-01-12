@@ -8,7 +8,7 @@
     <link rel="stylesheet" type='text/css' href="styles/base.css"/>
 </head>
 
-<body class="${widget.name}" g:onload="be.widgets['${widget.name}'].init(__WIDGET__)">
+<body class="${widget.namespace} ${widget.name}" g:onload="${widget.namespace}.widgets['${widget.name}'].init(__WIDGET__)">
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
